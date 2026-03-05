@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 class="title"> krmu calculator</h2>
+
+  <div class="calculator">
+    <input type="text" class="display" disabled>
+
+    <div class="buttons">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="op">+</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="op">−</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="op">*</button>
+
+      <button class="clear">C</button>
+      <button>0</button>
+      <button class="op">=</button>
+      <button class="op">/</button>
+    </div>
+  </div>
+
+</body>
+</html>
+<script>
+    let bag="";
+    let keys = document.querySelectorAll(".buttons button");
+
+    for (let i=0;i<keys.length;i++);{
+      keys[i],addEventListener("click",mycal)
+    }
+
+</script>

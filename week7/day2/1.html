@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    <h3>Welcome to fetch api</h3>
+</body>
+</html>
+<script>
+    const api="https://jsonplaceholder.typicode.com/comments"
+    // const data = fetch(api)
+    // .then((res)=>res.json())  // do baar .then isiliye kiya hai taaki json me kr ske 
+    // .then((ans)=>console.log(ans))
+    // console.log(data);
+    
+    fetch(api)
+        .then((res)=>res.json())
+        .then((ans)=>console.log(ans))
+        .finally(()=>console.log("kesa hai lulle"))
+
+</script>

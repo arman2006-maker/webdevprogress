@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async & await</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>//async await are both made on top of promise,
+    //  async is used whenever we want to convert a code to asynchronous,it always returns a promise
+    // await is used to resolve a promise 
+    // try cathc code is used for error handling
+    const api = "https://jsonplaceholder.typicode.com/comments"
+
+    const data = async function getData() {
+        // async code
+
+       try {
+         const response = await fetch(api);
+        console.log(response); // readable stream
+
+        const ans = await response.json(); // convert to json data
+        console.log(ans);
+       } catch (error) {
+        console.log(error,"chintu");
+        
+       }
+
+
+    }
+
+    // console.log(data());
+    data()
+
+</script>
